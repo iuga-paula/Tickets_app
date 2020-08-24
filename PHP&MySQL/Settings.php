@@ -57,7 +57,8 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
             <a href="Welcome.php" class="nav-item nav-link ">Home</a>
-            <a href="#" class="nav-item nav-link">Shows</a>
+            <a href="Shows.php" class="nav-item nav-link">Shows</a>
+            <a href = "Your_tickets.php" class="nav-item nav-link">Your tickets</a>
             <a href = "Settings.php" class="nav-item nav-link active">Settings</a>
         </div>
         <form class="form-inline ml-auto">
