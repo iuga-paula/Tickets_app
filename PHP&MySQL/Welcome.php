@@ -71,7 +71,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
             <a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#" class="nav-item nav-link">Shows</a>
+            <a href="Shows.php" class="nav-item nav-link">Shows</a>
+            <a href = "Your_tickets.php" class="nav-item nav-link">Your tickets</a>
             <a href = "Settings.php" class="nav-item nav-link">Settings</a>
         </div>
         <form class="form-inline ml-auto">
@@ -98,7 +99,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
         <div class="col-md-4">
             <h2>Summer Well</h2>
             <img src="https://thumbor.unica.ro/unsafe/1160x650/smart/filters:contrast(1):quality(80)/https://static.unica.ro/wp-content/uploads/2018/08/summer-well-1.jpg" class="img-thumbnail" alt="Thumbnail Image">
-            <p><a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-success">See tickets &raquo;</a></p>
+            <p><a href="SummerWell.php" class="btn btn-success">See tickets &raquo;</a></p>
         </div>
         <div class="col-md-4">
             <h2>Theatre night</h2>
@@ -108,7 +109,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
         <div class="col-md-4">
             <h2>Electric Castle</h2>
             <img src="https://img.wall-street.ro/image_thumbs/thumbs/3e7/3e78c28e740542d85d92749e0c1ebc0a-1063x560-00-86.jpg?v=1549454485"class="img-thumbnail" alt="Thumbnail Image">
-            <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">See tickets &raquo;</a></p>
+            <p><a href="ElectricCastle.php"  class="btn btn-success">See tickets &raquo;</a></p>
         </div>
 </div>
 
