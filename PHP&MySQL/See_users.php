@@ -1,12 +1,12 @@
 <?php
 
-$link =  mysqli_connect("localhost", "root", "", "appdb");
-#("hostname", "username", "password", "database")
-
-if($link === false){
-    die("Err:Could not connect to databse app db." . mysqli_connect_error());
-
+$test_file = file_exists("Config.php");
+if(!$test_file)
+{
+    die("Err: Config file does no exist please create one.");
 }
+
+require_once "Config.php";
 
 $sql = "SELECT id, username, email, birth_date FROM USERS";
 
@@ -20,6 +20,7 @@ if($result = mysqli_query($link, $sql))
                 echo "<th>username</th>";
                 echo "<th>email</th>";
                 echo "<th>birth_date</th>";
+                echo "<th>ACTION</th>";
             echo "</tr>";
         echo "</div>";
 
@@ -42,7 +43,11 @@ if($result = mysqli_query($link, $sql))
                 else{
                     echo "<td>" . $row['birth_date'] . "</td>";
                 }
-            echo "</tr>";
+                echo "<td>";
+                echo "<a href='Read.php?id=". $row['id'] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
+                echo "<a href='Delete1.php?id=". $row['id'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
+                echo "</td>";
+                echo "</tr>";
         }
         echo "</table>";
         // Free result set
@@ -64,20 +69,32 @@ mysqli_close($link);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style type="text/css">
+     body{ font: 14px Helvetica;}
     .top{
         background-color:#49c95e;
+    }
+    .glyphicon{
+        color:#1f5423;
     }
     .table {
    margin: 10% auto auto auto;
    width: 50% !important; 
 }
+ a:link{ color:green; font-weight:bold; font-size:1.5em;}
+ a:visited{ color: #006600;}
+
     </style>
     <title>See_USERS</title>
      
 </head>
 <body>
+<p class = "lead">Go back to
+<a href = "Settings.php">Settings</a>
+</p>
 </body>
 </html>
