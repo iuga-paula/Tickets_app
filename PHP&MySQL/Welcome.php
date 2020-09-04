@@ -104,7 +104,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true)
         <div class="col-md-4">
             <h2>Theatre night</h2>
             <img src="https://bucurestiulmeudrag.ro/img/photos/s1920/58376453-acbc-4068-a7ca-4c4b592b13d5.jpg"class="img-thumbnail" alt="Thumbnail Image">
-            <p><a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success">See tickets &raquo;</a></p>
+            <p><a href="Theatre_night.php" class="btn btn-success">See tickets &raquo;</a></p>
         </div>
         <div class="col-md-4">
             <h2>Electric Castle</h2>
