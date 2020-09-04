@@ -2,9 +2,6 @@
     session_start();
     require "Config.php";
 
- 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +39,17 @@
             height:10px;
            color:white;
         }
+
+        #admin{
+            visibility:hidden;
+        }
+
+        #admin p:first-child {
+            font-weight:bold;
+        }
+
+        ul a:link{ color:green; font-weight:bold; font-size:1.5em;}
+        ul a:visited{ color: #006600;}
     </style>
     
 
@@ -106,9 +114,32 @@ if($stmt = mysqli_prepare($link, $sql))
     Do you want to change your password?
     <a href="Reset_password"  class="btn btn-primary btn-success">Change password</a>
     </p>
-</div>
-</div>
+    <div id = "admin">
+    <p class = "lead">Since you are an admin you can see users, their orders and modify them.</p>
 
+    <ul>
+  <li><a href = "See_users.php" class = "nav-item nav-link" id="log">See users</a></li>
+  <li><a href = "See_orders.php" class = "nav-item nav-link" id="log">See orders</a></li>
+
+ </ul>
+</div>
+</div>
+<script type ="text/javascript">
+var request = new XMLHttpRequest();
+request.onload = function(){
+
+//alert(this.responseText);
+  var rez = JSON.parse(this.responseText);
+  if(rez == 1){
+    document.getElementById("admin").style.visibility = "visible";
+  }
+
+}
+
+
+request.open("get", "Verify_admin.php", true);
+request.send();
+</script>
 </body>
 </html>
 
