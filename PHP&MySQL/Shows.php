@@ -145,7 +145,7 @@ require_once "Config.php";
           <div class="mb-1 text-muted">11 Jul 2021</div>
           <p class="card-text p-2 mb-auto">The Prague Philharmonic Orchestra combines the atmosphere and power of the original songs with an unique interpretation, passion and the splendid sound of a big orchestra. What follows is an exalting audience experience, considered groundbreaking and very appreciated by Rock fans all over Europe.</p>
           <p class="card-text p-2 mb-auto">The absolute highlights of our shows include: Pink Floyd – Shine On You Crazy Diamond, Comfortably Numb, Echoes, Another Brick In The Wall, Deep Purple – Highway Star, Fireball, Smoke On The Water, When A Blind Man Cries, Queen – The Show Must Go On, We Are The Champions, A Kind Of Magic, Led Zeppelin – Stairway To Heaven and Kashmir, U2 – With Or Without You and Where The Streets Have No Name.</p>
-          <a href="#" class = "text-success tickets">See available tickets</a>
+          <a href="Theatre_night.php" class = "text-success tickets">See available tickets</a>
         </div>
         <div class="col-auto d-none d-lg-block">
         <img src="https://bucurestiulmeudrag.ro/img/photos/s1920/58376453-acbc-4068-a7ca-4c4b592b13d5.jpg"class="img-thumbnail" alt="Thumbnail Image">
