@@ -8,7 +8,7 @@ if(!$test_file)
 }
 
 require_once "Config.php";
-
+//require_once "Reserved_seats.php";
 
 
 /*$booked_seats = $_POST['ys'];
@@ -390,6 +390,28 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
   pointer-events: none;
 
 }
+#pls{
+  visibility: hidden;
+}
+
+@media only screen  and (max-width: 1023px){
+
+  form{
+    visibility:hidden;
+
+  }
+
+  #scene{
+    visibility:hidden;
+  }
+
+  #pls{
+    visibility:visible;
+    font-size:60px;
+    margin-left:50px;
+    font-weight:bold;
+  }
+}
       
 /*label::before {
   content: " ";
@@ -435,7 +457,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     <p><i class="fa fa-square" id = "sq3"></i> - Selected </p>
 </div>
 </div>
-
+<p id = "pls">Please view on desktop</p>
 <div id = "scene">SCENE</div>
 
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class = "x">
@@ -789,7 +811,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
     <input type="checkbox" name="seats[]" value="RR3-02"  id="myCheckbox65" />
     <label for="myCheckbox65">
-    <div class="seat" id = "RR2-07"></div>
+    <div class="seat" id = "RR3-02"></div>
     </label>
 
     <input type="checkbox" name="seats[]" value="RR3-03"  id="myCheckbox66" />
@@ -1011,12 +1033,15 @@ request.onload = function(){
 
   var tomodify = JSON.parse(this.responseText);
   var res = tomodify.trim().split(' ');
-
+  
   res.forEach(myFunction);
+  
   function myFunction(item, index) {
     
+  alert(item.toString());
   document.getElementById(item.toString()).style.background = "linear-gradient(to top, #18301a,#18301a,#18301a,#18301a,#142916, #18301a, #326336, #3c7342, #4d8f55, #69b572)";
   document.getElementById(item.toString()).classList.add("reserved");
+
 }
 
 }
@@ -1027,3 +1052,5 @@ request.send();
 
 </body>
 </html>
+
+
