@@ -19,11 +19,14 @@ This is a personal project made in Visual Studio using a local server hosted by 
 
 
 ## Demo
-![Login](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Login.JPG)\
-![Register](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Register.JPG)\
-![Welcome](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Welcome.JPG)\
-![Shows](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Shows.JPG)\
-![Sw2](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/SW2.JPG)\
+![Login](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Login.JPG)
+<br>
+![Register](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Register.JPG)
+<br>
+![Welcome](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Welcome.JPG)
+<br>
+![Shows](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Shows.JPG)
+![Sw2](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/SW2.JPG)
 ![Tr1](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Tr1.JPG)
-![Tr2](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Tr2.JPG)\
+![Tr2](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/Tr2.JPG)
 ![Total](https://github.com/iuga-paula/Tickets_app/blob/Demos-%26%26-Screenshots/total.JPG)
