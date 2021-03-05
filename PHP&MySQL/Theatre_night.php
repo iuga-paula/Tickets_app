@@ -1038,7 +1038,7 @@ request.onload = function(){
   
   function myFunction(item, index) {
     
-  alert(item.toString());
+  //alert(item.toString());
   document.getElementById(item.toString()).style.background = "linear-gradient(to top, #18301a,#18301a,#18301a,#18301a,#142916, #18301a, #326336, #3c7342, #4d8f55, #69b572)";
   document.getElementById(item.toString()).classList.add("reserved");
 
